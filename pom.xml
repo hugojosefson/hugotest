@@ -3,7 +3,7 @@
     <groupId>org.josefson.hugotest</groupId>
     <artifactId>hugotest</artifactId>
     <packaging>jar</packaging>
-    <version>0.1.0</version>
+    <version>0.1.1-SNAPSHOT</version>
     <name>HugoTest</name>
     <url>http://github.com/hugojosefson/hugotest</url>
     <inceptionYear>2009</inceptionYear>
