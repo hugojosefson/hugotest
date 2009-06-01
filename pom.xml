@@ -1,0 +1,84 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.josefson.hugotest</groupId>
+    <artifactId>hugotest</artifactId>
+    <packaging>jar</packaging>
+    <version>0.1.0-SNAPSHOT</version>
+    <name>HugoTest</name>
+    <url>http://github.com/hugojosefson/hugotest</url>
+    <inceptionYear>2009</inceptionYear>
+    
+    <developers>
+        <developer>
+            <id>hugojosefson</id>
+            <name>Hugo Josefson</name>
+            <email>hugo@josefson.org</email>
+            <url>http://blog.jayway.com/</url>
+            <organization>Jayway</organization>
+            <organizationUrl>http://www.jayway.com/</organizationUrl>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <timezone>GMT+1</timezone>
+        </developer>
+    </developers>
+
+    <issueManagement>
+        <system>Google Code</system>
+        <url>http://code.google.com/p/hugotest/issues/list</url>
+    </issueManagement>
+  
+    <scm>
+        <connection>scm:git:git://github.com/hugojosefson/hugotest.git</connection>
+        <developerConnection>scm:git:git://git@github.com/hugojosefson/hugotest.git</developerConnection>
+        <url>http://github.com/hugojosefson/hugotest/tree/master</url>
+    </scm>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                    <encoding>UTF8</encoding>
+                </configuration>
+            </plugin>
+
+            <!-- maven-source-plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+    </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>hugotest-m2repo.googlecode.com</id>
+            <name>hugotest-m2repo on Google Code</name>
+            <url>${env.HUGOTEST_M2REPO_SVN_WORKINGCOPY}/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>hugotest-m2repo.googlecode.com</id>
+            <name>hugotest-m2repo on Google Code - SNAPSHOTs</name>
+            <url>${env.HUGOTEST_M2REPO_SVN_WORKINGCOPY}/snapshots</url>
+        </snapshotRepository>
+        <site>
+            <id>hugotest-m2site.googlecode.com</id>
+            <name>hugotest-m2site on Google Code</name>
+			<url>${env.HUGOTEST_M2SITE_SVN_WORKINGCOPY}</url>
+        </site>
+    </distributionManagement>
+</project>
